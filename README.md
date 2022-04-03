@@ -3,42 +3,39 @@
 
 <details>
 <summary>Types of Bitwise Operator.</summary>
-<code>
- There are six types of the bitwise operator in Java:
+<code style="white-space:nowrap;">
 
-Bitwise AND
-Bitwise exclusive OR
-Bitwise inclusive OR
-Bitwise Compliment
-Bit Shift Operators
- Types of Bitwise Operator
 There are six types of the bitwise operator in Java:
-o	Bitwise AND
-o	Bitwise exclusive OR
-o	Bitwise inclusive OR
-o	Bitwise Compliment
-o	Bit Shift Operators
-Operators	Symbol	Uses
-Bitwise AND	&	op1 & op2
-Bitwise exclusive OR	^	op1 ^ op2
-Bitwise inclusive OR	|	op1 | op2
-Bitwise Compliment	~	~ op
-Bitwise left shift	<<	op1 << op2
-Bitwise right shift	>>	op1 >> op2
-Unsigned Right Shift Operator	>>> op >>>	number of places to shift
+   o	Bitwise AND
+   o	Bitwise exclusive OR
+   o	Bitwise inclusive OR
+   o	Bitwise Compliment
+   o	Bit Shift Operators
+ 
+      ![image](https://user-images.githubusercontent.com/29138925/161416297-1eb3a2c2-c2c1-4a19-99ab-feacaa0bf206.png)
+
+ 
+ 
 Let's explain the bitwise operator in detail.
 Bitwise AND (&)
 It is a binary operator denoted by the symbol &. It returns 1 if and only if both bits are 1, else returns 0.
+![image](https://user-images.githubusercontent.com/29138925/161416321-cce79c1c-be1c-40e1-9e98-78d45e12d2c2.png)
  
 
 Bitwise exclusive XOR (^)
 It is a binary operator denoted by the symbol ^ (pronounced as caret). It returns 0 if both bits are the same, else returns 1.
+ ![image](https://user-images.githubusercontent.com/29138925/161416333-736151df-7bea-4358-af8d-7857c8038c93.png)
+
  
 Bitwise inclusive OR (|)
 It is a binary operator denoted by the symbol | (pronounced as a pipe). It returns 1 if either of the bit is 1, else returns 0.
+ ![image](https://user-images.githubusercontent.com/29138925/161416342-625ec748-89e3-4f92-8ebd-ea0f8152b1ed.png)
+
+ 
  
 Bitwise Complement (~)
 It is a unary operator denoted by the symbol ~ (pronounced as the tilde). It returns the inverse or complement of the bit. It makes every 0 a 1 and every 1 a 0.
+![image](https://user-images.githubusercontent.com/29138925/161416350-e51cfac1-ee02-4686-a5fd-41d67afdaaa9.png)
  
 
 Left Shifts
@@ -52,16 +49,20 @@ A single left shift multiplies a binary number by 2:
 0010 is 2
 0100 is 4
 
-Logical Right Shifts
-When shifting right with a logical right shift, the least-significant bit is lost and a 00 is inserted on the other end.
-  1011 >>> 1  →  0101
-1011 >>> 3  →  0001
-For positive numbers, a single logical right shift divides a number by 2, throwing out any remainders.
-  0101 >>> 1  →  0010
+<!-- Logical Right Shifts -->
+ 
+   When shifting right with a logical right shift, the least-significant bit is lost and a 00 is inserted on the other end.
+     1011 >>> 1  →  0101
+   1011 >>> 3  →  0001
+   For positive numbers, a single logical right shift divides a number by 2, throwing out any remainders.
+     0101 >>> 1  →  0010
 
-0101 is 5
-0010 is 2
-Arithmetic Right Shifts
+   0101 is 5
+   0010 is 2
+ 
+ 
+<!-- Arithmetic Right Shifts -->
+ 
 When shifting right with an arithmetic right shift, the least-significant bit is lost and the most-significant bit is copied.
 Languages handle arithmetic and logical right shifting in different ways. Java provides two right shift operators: >> does an arithmetic right shift and >>> does a logical right shift.
   1011 >> 1  →  1101
@@ -69,6 +70,7 @@ Languages handle arithmetic and logical right shifting in different ways. Java p
 
 0011 >> 1  →  0001
 0011 >> 2  →  0000
+ 
 The first two numbers had a 11 as the most significant bit, so more 11's were inserted during the shift. The last two numbers had a 00 as the most significant bit, so the shift inserted more 00's.
 If a number is encoded using two's complement, then an arithmetic right shift preserves the number's sign, while a logical right shift makes the number positive.
   // Arithmetic shift
