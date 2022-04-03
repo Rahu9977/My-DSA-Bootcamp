@@ -3,7 +3,7 @@
 
 <details>
 <summary>Types of Bitwise Operator.</summary>
-<code style="white-space:nowrap;">
+<code>
  There are six types of the bitwise operator in Java:
 
 Bitwise AND
