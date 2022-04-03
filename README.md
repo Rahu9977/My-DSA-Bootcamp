@@ -1,6 +1,9 @@
 # My-DSA-Bootcamp
 
-**
+<details>
+<summary>Introduction to Number System and Bit Manipulation - ! 1. Single Number.</summary>
+<code style="white-space:nowrap;">
+ 
 Introduction to Number System and Bit Manipulation**
 
 Problem Description
@@ -52,3 +55,7 @@ Explanation 1:
 Explanation 2:
 
 1 occurs once.
+
+ </code>
+</details>
+
