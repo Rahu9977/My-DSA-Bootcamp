@@ -40,34 +40,35 @@ Explanation 2:
 public class Single_Number_3 {
 
 	public static void main(String[] args) {
-		int[] A = {1, 2, 3, 1, 2, 4};
+		int[] A = { 1, 2, 3, 1, 2, 4 };
 		int[] res = solve(A);
-		for(int n : res) {
+		for (int n : res) {
 			System.err.println(n);
 		}
-		
-	}
-	
-public static int[] solve(int[] A) {
-        
-        int xor = 0;
-        for (int num: A){
-            xor ^= num;
-        }
-        int lowestBit = xor&(-xor);
-      
-      int[] result = new int[2];
 
-        for (int num : A) {
-            if((lowestBit & num)==0){
-                result[0] ^=num;
-            }else{
-                result[1]^=num;
-            }
-     
-        }
-      
-        Arrays.sort(result);
-         return result;
-    }
+	}
+
+	public static int[] solve(int[] A) {
+
+		int xor = 0;
+		for (int num : A) {
+			xor ^= num;
+		}
+		
+		int lowestBit = xor & (-xor);
+		
+		int[] result = new int[2];
+
+		for (int num : A) {
+			if ((lowestBit & num) == 0) {
+				result[0] ^= num;
+			} else {
+				result[1] ^= num;
+			}
+
+		}
+
+		Arrays.sort(result);
+		return result;
+	}
 }

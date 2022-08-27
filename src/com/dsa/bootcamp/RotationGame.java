@@ -45,7 +45,7 @@ public class RotationGame {
 
 		// System.out.print("enter k:");
 		int k = sc.nextInt();
-		 int K = 2;
+		int K = 2;
 
 //		Scanner sc = new Scanner(System.in);
 //		int n = sc.nextInt();

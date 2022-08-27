@@ -82,9 +82,13 @@ public class MultipleLeftRotationsOfTheArray {
        for (int i = 0; i < B.size(); i ++) {
            ArrayList<Integer> row = new ArrayList<>();
            int pivot = B.get(i) % A.size();
+           System.err.println(pivot);
            row.addAll(A.subList(pivot, A.size()));
+           System.err.println(row);
            row.addAll(A.subList(0, pivot));
+           System.err.println(row);
            result.add(row);
+           System.err.println(result);
        }
        return result;
    }

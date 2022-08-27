@@ -4,7 +4,7 @@ package com.dsa.bootcamp.youtube;
 //	accending and desanding
 
 //1. find mind element
-//2.if target element is greater tahn mid search in the right else searchin left
+//2.if target element is greater than mid search in the right else search in left
 //3.if middle element == target elementS
 	
 public class BinarySearch1 {

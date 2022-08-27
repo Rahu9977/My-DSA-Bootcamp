@@ -27,9 +27,9 @@ import java.util.ArrayList;
  * 
  * Input 1:
  * 
- * A = [16, 17, 4, 3, 5, 2] Input 2:
+ * A = [16, 17, 4, 3, 5, 2] Input 2: <------ right to left 
  * 
- * A = [1, 2]
+ * A = [1, 2]  <-- right ot left
  * 
  * 
  * Example Output
